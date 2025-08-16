@@ -13,7 +13,7 @@ const stats = [
 
 export function AboutSection() {
   return (
-    <section id="nosotros" className="py-20 lg:py-32 bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 animate-fade-in">
+  <section id="nosotros" className="py-20 lg:py-32 bg-background text-foreground animate-fade-in">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           {/* Imagen alineada al centro y responsiva */}
@@ -54,7 +54,7 @@ export function AboutSection() {
             {/* Stats rediseñados y centrados */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 lg:gap-8 mt-4">
               {stats.map((stat, index) => (
-                <div key={index} className="flex flex-col items-center justify-center text-center p-4 rounded-xl bg-white dark:bg-gray-800 shadow-md transform hover:scale-105 transition-transform duration-200 ease-in-out">
+                <div key={index} className="flex flex-col items-center justify-center text-center p-4 rounded-xl bg-card shadow-md transform hover:scale-105 transition-transform duration-200 ease-in-out">
                   <stat.icon className="h-8 w-8 text-primary mb-2" />
                   <div className="text-2xl font-bold text-foreground mb-1">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
