@@ -18,10 +18,10 @@ export function Navigation() {
   }, [])
 
   const navItems = [
-    { href: "#inicio", label: "Inicio" },
-    { href: "#servicios", label: "Servicios" },
-    { href: "#nosotros", label: "Nosotros" },
-    { href: "#contacto", label: "Contacto" },
+    { href: "/", label: "Inicio" },
+    { href: "/servicios", label: "Servicios" },
+    { href: "/nosotros", label: "Nosotros" },
+    { href: "/contacto", label: "Contacto" },
   ]
 
   return (
@@ -32,9 +32,9 @@ export function Navigation() {
       aria-label="Barra de navegación principal"
     >
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between" role="navigation">
-        <a href="#inicio" className="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-primary rounded-xl transition-shadow duration-200">
+        <a href="/" className="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-primary rounded-xl transition-shadow duration-200">
           <div className="bg-primary/10 p-2 rounded-xl animate-fade-in">
-            <Heart className="h-8 w-8 text-primary animate-bounce" />
+            <Heart className="h-8 w-8 text-primary" />
           </div>
           <div>
             <span className="text-2xl font-serif font-bold text-foreground">Cardio Medic</span>

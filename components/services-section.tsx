@@ -74,7 +74,7 @@ export function ServicesSection() {
                   {service.badge && (
                     <Badge
                       variant={service.badge === "Más Popular" ? "default" : "secondary"}
-                      className="absolute -top-2 -right-2 z-10 animate-bounce"
+                      className="absolute -top-2 -right-2 z-10"
                     >
                       {service.badge}
                     </Badge>
@@ -109,7 +109,7 @@ export function ServicesSection() {
               Nuestro equipo está disponible las 24 horas para brindarte la mejor atención médica
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition-colors shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary animate-bounce">
+              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition-colors shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary">
                 🚨 Llamar Emergencia
               </button>
               <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-colors shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary animate-fade-in delay-200">

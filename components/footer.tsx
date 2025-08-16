@@ -7,29 +7,29 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-foreground text-background animate-fade-in" aria-label="Pie de página Cardio Medic">
+  <footer className="bg-background text-foreground" aria-label="Pie de página Cardio Medic">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center text-center">
           {/* Logo + Slogan/Resumen con animación */}
-          <div className="lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="bg-primary/20 p-2 rounded-xl animate-bounce">
+          <div className="lg:col-span-1 flex flex-col items-center text-center">
+            <div className="flex items-center justify-center space-x-3 mb-6">
+              <div className="bg-primary/20 p-2 rounded-xl">
                 <Heart className="h-8 w-8 text-primary" />
               </div>
-              <div>
+              <div className="text-center">
                 <span className="text-2xl font-serif font-bold">Cardio Medic</span>
-                <div className="text-xs text-background/70">Cuidado médico 24/7</div>
+                <div className="text-xs text-foreground/70">Cuidado médico 24/7</div>
               </div>
             </div>
-            <p className="text-background/80 text-sm leading-relaxed animate-fade-in delay-200">
+            <p className="text-foreground/80 text-sm leading-relaxed text-center">
               Líderes en servicios médicos de emergencia y atención domiciliaria. Cuidado profesional y empático,
               disponible las 24 horas para tu tranquilidad y la de tu familia.
             </p>
           </div>
           {/* Navegación con accesibilidad y microinteracciones */}
-          <div>
-            <h5 className="font-serif font-semibold text-lg mb-6">Navegación</h5>
-            <ul className="space-y-3 text-sm text-background/80">
+          <div className="flex flex-col items-center text-center">
+            <h5 className="font-serif font-semibold text-lg mb-6 text-center">Navegación</h5>
+            <ul className="space-y-3 text-sm text-foreground/80 text-center">
               {[
                 { href: "#inicio", label: "Inicio" },
                 { href: "#servicios", label: "Servicios" },
@@ -51,9 +51,9 @@ export function Footer() {
           </div>
 
           {/* Column 3: Contact Information */}
-          <div>
-            <h5 className="font-serif font-semibold text-lg mb-6">Información de Contacto</h5>
-            <div className="space-y-4 text-sm text-background/80">
+          <div className="flex flex-col items-center text-center">
+            <h5 className="font-serif font-semibold text-lg mb-6 text-center">Información de Contacto</h5>
+            <div className="space-y-4 text-sm text-foreground/80 text-center">
               <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-primary" />
                 <div>
@@ -83,68 +83,48 @@ export function Footer() {
           </div>
 
           {/* Column 4: Social Media Buttons */}
-          <div>
-            <h5 className="font-serif font-semibold text-lg mb-6">Redes Sociales</h5>
-            <div className="space-y-4">
+          <div className="flex flex-col items-center text-center">
+            <h5 className="font-serif font-semibold text-lg mb-6 text-center">Redes Sociales</h5>
+            <div className="space-y-4 text-center">
               <Button
                 variant="ghost"
-                className="w-full justify-start text-background/80 hover:text-primary hover:bg-background/10"
+                className="w-full justify-center text-foreground/80 hover:text-primary hover:bg-foreground/10"
               >
                 <Facebook className="h-5 w-5 mr-3" />
                 Facebook
               </Button>
               <Button
                 variant="ghost"
-                className="w-full justify-start text-background/80 hover:text-primary hover:bg-background/10"
+                className="w-full justify-center text-foreground/80 hover:text-primary hover:bg-foreground/10"
               >
                 <Twitter className="h-5 w-5 mr-3" />
                 Twitter
               </Button>
               <Button
                 variant="ghost"
-                className="w-full justify-start text-background/80 hover:text-primary hover:bg-background/10"
+                className="w-full justify-center text-foreground/80 hover:text-primary hover:bg-foreground/10"
               >
                 <Instagram className="h-5 w-5 mr-3" />
                 Instagram
               </Button>
               <Button
                 variant="ghost"
-                className="w-full justify-start text-background/80 hover:text-primary hover:bg-background/10"
+                className="w-full justify-center text-foreground/80 hover:text-primary hover:bg-foreground/10"
               >
                 <Linkedin className="h-5 w-5 mr-3" />
                 LinkedIn
               </Button>
             </div>
 
-            {/* Emergency Contact in Social Column */}
-            <div className="mt-6 bg-red-600/20 border border-red-600/30 rounded-xl p-4">
-              <div className="flex items-center gap-2 mb-2">
-                <Phone className="h-4 w-4 text-red-400" />
-                <span className="text-sm font-medium text-red-400">🚨 Emergencias 24/7</span>
-              </div>
-              <p className="text-lg font-bold text-red-400 mb-3">+1 (555) 911-HELP</p>
-              <Button
-                size="sm"
-                className="w-full bg-red-600 hover:bg-red-700 text-white rounded-full"
-                onClick={() =>
-                  window.open(
-                    "https://wa.me/15559111234?text=🚨%20Emergencia%20médica%20-%20Necesito%20ayuda%20inmediata",
-                    "_blank",
-                  )
-                }
-              >
-                <MessageCircle className="h-4 w-4 mr-2" />
-                WhatsApp Emergencia
-              </Button>
-            </div>
+            
           </div>
         </div>
       </div>
 
-      <div className="border-t border-background/20">
+  <div className="border-t border-foreground/20">
         <div className="container mx-auto px-4 py-6">
-          <div className="text-center text-background/60 text-sm">
-            © {currentYear} Cardio Medic. Desarrollado y diseñado por Nexium Solutions y Ditiero.
+          <div className="text-center text-foreground/60 text-sm">
+            © {currentYear} Cardio Medic. Desarrollado y diseñado por Nexium Solutions.
           </div>
         </div>
       </div>
