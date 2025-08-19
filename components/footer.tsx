@@ -7,7 +7,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-  <footer className="bg-background text-foreground" aria-label="Pie de página Cardio Medic">
+  <footer className="bg-gray-100 dark:bg-gray-900 text-foreground" aria-label="Pie de página Cardio Medic">
   <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-start text-left">
           {/* Logo + Slogan/Resumen con animación */}
