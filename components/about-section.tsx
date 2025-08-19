@@ -3,6 +3,7 @@
 import { Award, Users, Clock, Shield, Award as AwardIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 
 const stats = [
   { icon: Users, value: "15,000+", label: "Pacientes Atendidos" },
@@ -15,16 +16,16 @@ export function AboutSection() {
   return (
   <section id="nosotros" className="py-20 lg:py-32 bg-background text-foreground animate-fade-in">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+  <div className="grid lg:grid-cols-2 gap-16 items-stretch max-w-7xl mx-auto">
           {/* Imagen alineada al centro y responsiva */}
-          <div className="order-1 flex items-center justify-center animate-fade-in">
-            <div className="relative w-full">
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl w-full max-w-lg mx-auto transform hover:scale-105 transition-transform duration-300 ease-in-out">
+          <div className="order-1 flex items-stretch justify-center animate-fade-in">
+            <div className="relative w-full h-full">
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl w-full max-w-lg mx-auto h-full flex items-stretch">
                 {/* Imagen de ejemplo con un placeholder */}
                 <img 
                   src="/222.jpg"
                   alt="Equipo médico profesional de Cardio Medic"
-                  className="w-full h-auto max-h-[550px] object-cover"
+                  className="w-full h-full object-cover min-h-[400px]"
                 />
               </div>
             </div>
@@ -32,9 +33,11 @@ export function AboutSection() {
 
           {/* Texto y stats alineados */}
           <div className="order-2 flex flex-col justify-center h-full animate-fade-in delay-100">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-8 text-center lg:text-left">
+            <Badge variant="outline" className="mb-4 text-primary border-primary/20 animate-fade-in">Nosotros</Badge>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-2 text-center lg:text-left">
               Líderes en Atención Médica de Emergencia
             </h2>
+            <div className="w-16 h-1 bg-sky-400 rounded-full mx-auto lg:mx-0 mb-6" />
             <div className="space-y-6 mb-8 text-center lg:text-left">
               <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in delay-200">
                 Con más de <span className="text-primary font-semibold">15 años de experiencia</span> en servicios médicos de emergencia, Cardio Medic se ha consolidado como el líder en atención médica domiciliaria y de urgencias en la región.
@@ -54,10 +57,10 @@ export function AboutSection() {
             {/* Stats rediseñados y centrados */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 lg:gap-8 mt-4">
               {stats.map((stat, index) => (
-                <div key={index} className="flex flex-col items-center justify-center text-center p-4 rounded-xl bg-card shadow-md transform hover:scale-105 transition-transform duration-200 ease-in-out">
-                  <stat.icon className="h-8 w-8 text-primary mb-2" />
-                  <div className="text-2xl font-bold text-foreground mb-1">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div key={index} className="flex flex-col items-center justify-center text-center p-2 rounded-xl bg-card shadow-md">
+                  <stat.icon className="h-6 w-6 text-primary mb-1" />
+                  <div className="text-lg font-bold text-foreground mb-0.5">{stat.value}</div>
+                  <div className="text-xs text-muted-foreground">{stat.label}</div>
                 </div>
               ))}
             </div>

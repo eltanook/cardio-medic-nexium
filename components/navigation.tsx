@@ -18,10 +18,10 @@ export function Navigation() {
   }, [])
 
   const navItems = [
-    { href: "/", label: "Inicio" },
-    { href: "/servicios", label: "Servicios" },
-    { href: "/nosotros", label: "Nosotros" },
-    { href: "/contacto", label: "Contacto" },
+    { href: "#inicio", label: "Inicio" },
+    { href: "#servicios", label: "Servicios" },
+    { href: "#nosotros", label: "Nosotros" },
+    { href: "#contacto", label: "Contacto" },
   ]
 
   return (
@@ -37,8 +37,8 @@ export function Navigation() {
             <Heart className="h-8 w-8 text-primary" />
           </div>
           <div>
-            <span className="text-2xl font-serif font-bold text-foreground">Cardio Medic</span>
-            <div className="text-xs text-muted-foreground">Cuidado médico 24/7</div>
+            <span className="text-2xl font-serif font-bold text-black dark:text-white">Cardio Medic</span>
+            <div className="text-xs text-black/80 dark:text-white/80">Cuidado médico 24/7</div>
           </div>
         </a>
         <div className="hidden lg:flex items-center space-x-8">
@@ -46,7 +46,7 @@ export function Navigation() {
             <a
               key={item.href}
               href={item.href}
-              className="text-foreground hover:text-primary transition-colors font-medium relative group px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-primary"
+              className="text-black dark:text-white hover:text-primary dark:hover:text-primary transition-colors font-medium relative group px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-primary"
               aria-label={item.label}
             >
               {item.label}
@@ -76,7 +76,7 @@ export function Navigation() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors font-medium px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary"
+                className="text-black dark:text-white hover:text-primary dark:hover:text-primary transition-colors font-medium px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary"
                 aria-label={item.label}
                 onClick={() => setIsMobileMenuOpen(false)}
               >

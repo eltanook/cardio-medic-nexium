@@ -10,16 +10,21 @@ export default function CardioMedicLanding() {
     <div className="min-h-screen bg-background">
       <Navigation />
       <main>
-        <div id="inicio">
+        <section id="inicio">
           <HeroSection />
-        </div>
-        <ServicesSection />
-        <AboutSection />
-        <ContactSection />
+        </section>
+        <section id="servicios">
+          <ServicesSection />
+        </section>
+        <section id="nosotros">
+          <AboutSection />
+        </section>
+        <section id="contacto">
+          <ContactSection />
+        </section>
       </main>
       <WhatsappBubble />
       <Footer />
     </div>
-
   )
 }

@@ -1,4 +1,4 @@
-import { Clock, Shield, Users, Heart, Stethoscope, Ambulance } from "lucide-react"
+import { Clock, Shield, Users, Heart, Stethoscope, Ambulance, Phone, Siren } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -103,17 +103,19 @@ export function ServicesSection() {
 
         {/* CTA Section mejorada */}
         <div className="text-center mt-16 animate-fade-in delay-500">
-          <div className="glass bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 rounded-3xl p-8 max-w-4xl mx-auto shadow-xl">
+          <div className="glass bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 rounded-3xl p-8 max-w-7xl mx-auto shadow-xl">
             <h3 className="text-2xl font-serif font-bold text-foreground mb-4 animate-slide-up">¿Necesitas atención médica inmediata?</h3>
             <p className="text-muted-foreground mb-6 animate-fade-in delay-200">
               Nuestro equipo está disponible las 24 horas para brindarte la mejor atención médica
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition-colors shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary">
-                🚨 Llamar Emergencia
+              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition-colors shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary flex items-center gap-2">
+                <Siren className="h-5 w-5" />
+                Llamar Emergencia
               </button>
-              <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-colors shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary animate-fade-in delay-200">
-                📞 Agendar Consulta
+              <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full font-semibold transition-colors shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary animate-fade-in delay-200 flex items-center gap-2">
+                <Phone className="h-5 w-5" />
+                Agendar Consulta
               </button>
             </div>
           </div>
