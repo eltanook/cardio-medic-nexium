@@ -19,8 +19,8 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Cardio Medic - Servicio de Emergencias Médicas 24/7",
   description:
-    "Atención médica profesional las 24 horas. Emergencias, atención domiciliaria y telemedicina con el mejor equipo médico.",
-  keywords: "emergencias médicas, atención domiciliaria, telemedicina, cardio medic, servicios médicos 24/7",
+    "Atención médica profesional las 24 horas. Emergencias y atención domiciliaria con el mejor equipo médico.",
+  keywords: "emergencias médicas, atención domiciliaria, cardio medic, servicios médicos 24/7",
   authors: [{ name: "Cardio Medic" }],
   icons: {
     icon: "/favicon.ico",

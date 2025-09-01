@@ -53,7 +53,6 @@ export function ContactSection() {
                       <option>Consulta general</option>
                       <option>Emergencia médica</option>
                       <option>Atención domiciliaria</option>
-                      <option>Telemedicina</option>
                       <option>Información de servicios</option>
                     </select>
                   </div>

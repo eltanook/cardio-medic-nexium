@@ -12,22 +12,47 @@ const stats = [
   { icon: Shield, value: "99.9%", label: "Tasa de Satisfacción" },
 ]
 
+const additionalStats = [
+  { icon: Users, value: "50+", label: "Profesionales Médicos" },
+  { icon: Shield, value: "8", label: "Ambulancias Equipadas" },
+  { icon: Clock, value: "< 15min", label: "Tiempo de Respuesta" },
+  { icon: AwardIcon, value: "5", label: "Especialidades Médicas" },
+]
+
 export function AboutSection() {
   return (
-  <section id="nosotros" className="py-20 lg:py-32 bg-background text-foreground animate-fade-in">
+    <section id="nosotros" className="py-20 lg:py-32 bg-background text-foreground animate-fade-in">
       <div className="container mx-auto px-4">
-  <div className="grid lg:grid-cols-2 gap-16 items-stretch max-w-7xl mx-auto">
-          {/* Imagen alineada al centro y responsiva */}
+        <div className="grid lg:grid-cols-2 gap-16 items-stretch max-w-7xl mx-auto">
+          {/* Galería de imágenes mejorada */}
           <div className="order-1 flex items-stretch justify-center animate-fade-in">
             <div className="relative w-full h-full">
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl w-full max-w-lg mx-auto h-full flex items-stretch">
-                {/* Imagen de ejemplo con un placeholder */}
+              {/* Imagen principal */}
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl w-full max-w-lg mx-auto h-full flex items-stretch mb-6">
                 <img 
-                  src="/222.jpg"
+                  src="/foto1.jpg"
                   alt="Equipo médico profesional de Cardio Medic"
                   className="w-full h-full object-cover min-h-[400px]"
                 />
               </div>
+              
+              {/* Galería de imágenes secundarias */}
+              {/* <div className="grid grid-cols-2 gap-4 max-w-lg mx-auto">
+                <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                  <img 
+                    src="/foto2.jpg"
+                    alt="Ambulancia equipada de Cardio Medic"
+                    className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                  <img 
+                    src="/foto3.jpg"
+                    alt="Equipo médico en acción"
+                    className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div> */}
             </div>
           </div>
 
@@ -63,6 +88,66 @@ export function AboutSection() {
                   <div className="text-xs text-muted-foreground">{stat.label}</div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Galería de fotos adicional */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-serif font-bold text-foreground mb-4">Nuestras Instalaciones y Equipo</h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Conoce nuestras modernas instalaciones y el equipo médico de última generación que utilizamos para brindarte la mejor atención.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+              <img 
+                src="/foto1.jpg"
+                alt="Instalaciones médicas modernas"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h4 className="font-semibold">Instalaciones Modernas</h4>
+              </div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+              <img 
+                src="/foto2.jpg"
+                alt="Equipo médico profesional"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h4 className="font-semibold">Equipo Profesional</h4>
+              </div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+              <img 
+                src="/foto3.jpg"
+                alt="Ambulancias equipadas"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h4 className="font-semibold">Ambulancias Equipadas</h4>
+              </div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+              <img 
+                src="/foto4.jpg"
+                alt="Equipo médico sonriendo"
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h4 className="font-semibold">Equipo Comprometido</h4>
+              </div>
             </div>
           </div>
         </div>

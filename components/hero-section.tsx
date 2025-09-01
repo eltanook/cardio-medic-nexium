@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 
 export function HeroSection() {
   const images = [
-    { src: "/11.jpg", alt: "Equipo médico" },
+    { src: "/foto2.jpg", alt: "Equipo médico" },
     { src: "/1.jpg", alt: "Paciente feliz" },
     { src: "/2.jpg", alt: "Atención médica" },
   ];

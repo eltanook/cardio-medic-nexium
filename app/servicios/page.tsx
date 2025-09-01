@@ -3,7 +3,7 @@
 "use client"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Clock, Shield, Users, Heart, Stethoscope, Ambulance } from "lucide-react"
+import { Clock, Shield, Heart, Stethoscope, Ambulance, Truck, Activity, Calendar } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { WhatsappBubble } from "@/components/whatsapp-bubble"
@@ -25,14 +25,6 @@ const services = [
     badge: null,
   },
   {
-    icon: Users,
-    title: "Telemedicina",
-    description:
-      "Consultas médicas virtuales con especialistas. Diagnóstico y tratamiento a distancia cuando sea posible.",
-    features: ["Consulta virtual", "Especialistas", "Recetas digitales"],
-    badge: "Nuevo",
-  },
-  {
     icon: Heart,
     title: "Cardiología Especializada",
     description: "Atención especializada en problemas cardiovasculares con equipos de última generación.",
@@ -47,11 +39,40 @@ const services = [
     badge: null,
   },
   {
-    icon: Ambulance,
-    title: "Traslados Médicos",
-    description: "Servicio de ambulancia equipada para traslados seguros a centros hospitalarios.",
-    features: ["Ambulancia equipada", "Personal capacitado", "Traslados seguros"],
+    icon: Truck,
+    title: "Traslado en Ambulancia de Baja",
+    description: "Servicio de traslado médico con móviles modernos y equipados para garantizar tu comodidad y seguridad durante el traslado.",
+    features: [
+      "Móviles modernos y completamente equipados", 
+      "Servicio disponible las 24 horas del día", 
+      "Personal especializado (chofer y paramédico)",
+      "Tranquilidad y mejor servicio garantizado"
+    ],
     badge: null,
+  },
+  {
+    icon: Activity,
+    title: "Traslado UTIM",
+    description: "Unidad de Terapia Intensiva Móvil con equipamiento médico de última generación para situaciones críticas.",
+    features: [
+      "Unidades modernas con tecnología avanzada", 
+      "Equipamiento médico de última generación", 
+      "Personal médico y paramédico calificado",
+      "Respuesta ante emergencias críticas"
+    ],
+    badge: "Especializado",
+  },
+  {
+    icon: Calendar,
+    title: "Ambulancias en Cobertura de Eventos",
+    description: "Servicio integral de cobertura médica para eventos con equipos profesionales y instalaciones completas.",
+    features: [
+      "Eventos deportivos, festivales y conciertos", 
+      "Móviles modernos UTIM disponibles", 
+      "Carpas de atención médica equipadas",
+      "Equipo: médicos, enfermeros y paramédicos"
+    ],
+    badge: "Eventos",
   },
 ]
 
@@ -76,9 +97,9 @@ export default function ServiciosPage() {
               {services.map((service, index) => (
                 <Card
                   key={index}
-                  className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg hover:-translate-y-2 bg-card/70 backdrop-blur-lg animate-fade-in delay-100"
+                  className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg hover:-translate-y-2 bg-card/70 backdrop-blur-lg animate-fade-in delay-100 h-full flex flex-col"
                 >
-                  <CardContent className="p-8">
+                  <CardContent className="p-8 flex flex-col h-full">
                     <div className="relative mb-6">
                       {service.badge && (
                         <Badge
@@ -95,13 +116,13 @@ export default function ServiciosPage() {
 
                     <h3 className="text-2xl font-serif font-semibold text-foreground mb-4 animate-slide-up delay-200">{service.title}</h3>
 
-                    <p className="text-muted-foreground leading-relaxed mb-6 animate-fade-in delay-300">{service.description}</p>
+                    <p className="text-muted-foreground leading-relaxed mb-6 animate-fade-in delay-300 flex-grow">{service.description}</p>
 
-                    <div className="space-y-2">
+                    <div className="space-y-2 mt-auto">
                       {service.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center gap-2 animate-fade-in delay-400">
-                          <div className="w-2 h-2 bg-primary rounded-full" />
-                          <span className="text-sm text-muted-foreground">{feature}</span>
+                        <div key={featureIndex} className="flex items-start gap-2 animate-fade-in delay-400">
+                          <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                          <span className="text-sm text-muted-foreground leading-relaxed">{feature}</span>
                         </div>
                       ))}
                     </div>
