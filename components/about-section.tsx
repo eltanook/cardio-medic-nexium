@@ -101,52 +101,64 @@ export function AboutSection() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-              <img 
-                src="/foto1.jpg"
-                alt="Instalaciones médicas modernas"
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h4 className="font-semibold">Instalaciones Modernas</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-card rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/foto1.jpg"
+                  alt="Instalaciones médicas modernas"
+                  className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-foreground mb-2">Instalaciones Modernas</h4>
+                <p className="text-muted-foreground">Espacios diseñados con la más alta tecnología médica para brindar atención de calidad.</p>
               </div>
             </div>
             
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-              <img 
-                src="/foto2.jpg"
-                alt="Equipo médico profesional"
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h4 className="font-semibold">Equipo Profesional</h4>
+            <div className="bg-card rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/foto2.jpg"
+                  alt="Equipo médico profesional"
+                  className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-foreground mb-2">Equipo Profesional</h4>
+                <p className="text-muted-foreground">Médicos especialistas y personal altamente capacitado para emergencias médicas.</p>
               </div>
             </div>
             
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-              <img 
-                src="/foto3.jpg"
-                alt="Ambulancias equipadas"
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h4 className="font-semibold">Ambulancias Equipadas</h4>
+            <div className="bg-card rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/foto3.jpg"
+                  alt="Ambulancias equipadas"
+                  className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-foreground mb-2">Ambulancias Equipadas</h4>
+                <p className="text-muted-foreground">Flota de ambulancias con equipamiento médico de última generación disponible 24/7.</p>
               </div>
             </div>
             
-            <div className="relative overflow-hidden rounded-2xl shadow-lg group">
-              <img 
-                src="/foto4.jpg"
-                alt="Equipo médico sonriendo"
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h4 className="font-semibold">Equipo Comprometido</h4>
+            <div className="bg-card rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/foto4.jpg"
+                  alt="Equipo médico sonriendo"
+                  className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-xl font-bold text-foreground mb-2">Equipo Comprometido</h4>
+                <p className="text-muted-foreground">Personal dedicado y comprometido con la excelencia en el cuidado de la salud.</p>
               </div>
             </div>
           </div>

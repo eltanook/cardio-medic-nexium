@@ -1,9 +1,10 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Heart, Menu, X, MessageCircle } from "lucide-react"
+import { Menu, X, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
+import Image from "next/image"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -31,14 +32,17 @@ export function Navigation() {
       }`}
       aria-label="Barra de navegación principal"
     >
-      <nav className="container mx-auto px-4 py-4 flex items-center justify-between" role="navigation">
-        <a href="/" className="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-primary rounded-xl transition-shadow duration-200">
-          <div className="bg-primary/10 p-2 rounded-xl animate-fade-in">
-            <Heart className="h-8 w-8 text-primary" />
-          </div>
-          <div>
-            <span className="text-2xl font-serif font-bold text-black dark:text-white">Cardio Medic</span>
-            <div className="text-xs text-black/80 dark:text-white/80">Cuidado médico 24/7</div>
+      <nav className="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between" role="navigation">
+        <a href="/" className="flex items-center focus:outline-none focus:ring-2 focus:ring-primary rounded-xl transition-shadow duration-200">
+          <div className="animate-fade-in -m-3">
+            <Image 
+              src="/logo.png" 
+              alt="Cardio Medic Logo" 
+              width={80} 
+              height={80}
+              className="h-20 w-20 object-contain"
+              priority
+            />
           </div>
         </a>
         <div className="hidden lg:flex items-center space-x-8">
