@@ -106,7 +106,7 @@ export function Footer() {
   <div className="border-t border-foreground/20">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="text-center text-foreground font-semibold text-sm">
-            © {currentYear} Cardio Medic. Desarrollado y diseñado por Nexium Solutions.
+            © {currentYear} Cardio Medic. Desarrollado y diseñado por Nexium Solutions y Ditiero.
           </div>
         </div>
       </div>
