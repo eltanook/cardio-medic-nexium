@@ -54,6 +54,7 @@ export function HeroSection() {
             <Button
               size="lg"
               className="bg-red-600 hover:bg-red-700 text-white rounded-full px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={() => window.open("https://wa.me/5493415624552?text=¡Emergencia! Necesito atención médica urgente", "_blank")}
             >
               <MessageCircle className="h-6 w-6 mr-3 animate-fade-in" />Emergencia WhatsApp
             </Button>
@@ -61,6 +62,7 @@ export function HeroSection() {
               variant="outline"
               size="lg"
               className="rounded-full px-10 py-6 text-lg font-semibold border-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300 bg-white/70 backdrop-blur-md animate-fade-in delay-200"
+              onClick={() => window.open("tel:3415624552", "_self")}
             >
               <Phone className="h-6 w-6 mr-3 animate-fade-in" />
               Consulta General

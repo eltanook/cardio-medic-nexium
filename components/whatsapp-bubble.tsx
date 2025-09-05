@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa"
 import { useState, useEffect } from "react"
 
 export function WhatsappBubble() {
-  const [phoneNumber, setPhoneNumber] = useState("525512345678")
+  const [phoneNumber, setPhoneNumber] = useState("5493415624552")
   const [message, setMessage] = useState("Hola Cardio Medic, necesito información sobre sus servicios")
 
   useEffect(() => {

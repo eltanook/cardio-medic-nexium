@@ -57,21 +57,21 @@ export default function ContactoPage() {
                       <Phone className="h-6 w-6 text-primary" />
                       <div>
                         <div className="font-medium">Teléfono</div>
-                        <div>+1 (555) 123-4567</div>
+                        <div>341-5624552</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
                       <Mail className="h-6 w-6 text-primary" />
                       <div>
                         <div className="font-medium">Email</div>
-                        <div>info@cardiomedic.com</div>
+                        <div>cardiomedic365@gmail.com</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
                       <MapPin className="h-6 w-6 text-primary" />
                       <div>
                         <div className="font-medium">Ubicación</div>
-                        <div>Av. Salud 123, Torre Médica<br />Ciudad Médica, Estado 12345</div>
+                        <div>Saavedra 1555<br />Rosario - Provincia de Santa Fe</div>
                       </div>
                     </div>
                   </div>

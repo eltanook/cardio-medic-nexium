@@ -1,6 +1,6 @@
 "use client"
 
-import { Heart, MessageCircle, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Heart, MessageCircle, Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
@@ -61,25 +61,25 @@ export function Footer() {
               <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-primary" />
                 <div>
-                  <div className="font-bold text-primary">Teléfono</div>
-                  <div>+1 (555) 123-4567</div>
+                  <div className="font-bold text-primary">Teléfono ☎ 24hs</div>
+                  <div>341-5624552</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-primary" />
                 <div>
-                  <div className="font-bold text-primary">Email</div>
-                  <div>info@cardiomedic.com</div>
+                  <div className="font-bold text-primary">E-mail</div>
+                  <div>cardiomedic365@gmail.com</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-primary mt-1" />
                 <div>
-                  <div className="font-bold text-primary">Ubicación</div>
+                  <div className="font-bold text-primary">Domicilio</div>
                   <div>
-                    Av. Salud 123, Torre Médica
+                    Saavedra 1555
                     <br />
-                    Ciudad Médica, Estado 12345
+                    Rosario - Provincia de Santa Fe
                   </div>
                 </div>
               </div>
@@ -90,16 +90,20 @@ export function Footer() {
           <div className="flex flex-col items-center justify-center text-center w-full">
             <h5 className="font-serif font-bold text-lg mb-6 text-center text-primary w-full">Redes Sociales</h5>
             <div className="space-y-4 text-center flex flex-col items-center w-full">
-              {[{icon: Facebook, label: 'Facebook'}, {icon: Twitter, label: 'Twitter'}, {icon: Instagram, label: 'Instagram'}, {icon: Linkedin, label: 'LinkedIn'}].map(({icon: Icon, label}, idx) => (
-                <Button
-                  key={label}
-                  variant="ghost"
-                  className="w-40 justify-center text-foreground font-semibold hover:text-primary hover:bg-primary/10"
-                >
-                  <Icon className="h-5 w-5 mr-3" />
-                  {label}
-                </Button>
-              ))}
+              <Button
+                variant="ghost"
+                className="w-40 justify-center text-foreground font-semibold hover:text-primary hover:bg-primary/10"
+              >
+                <Facebook className="h-5 w-5 mr-3" />
+                Cardio Medic Ambulancias
+              </Button>
+              <Button
+                variant="ghost"
+                className="w-40 justify-center text-foreground font-semibold hover:text-primary hover:bg-primary/10"
+              >
+                <Instagram className="h-5 w-5 mr-3" />
+                cardiomedic.24
+              </Button>
             </div>
 
             

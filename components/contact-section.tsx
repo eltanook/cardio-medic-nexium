@@ -45,7 +45,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">Teléfono *</label>
-                    <Input type="tel" name="telefono" placeholder="+1 (555) 123-4567" className="rounded-xl border-2 border-gray-300 bg-white text-black focus:border-primary shadow-lg" required />
+                    <Input type="tel" name="telefono" placeholder="341-5624552" className="rounded-xl border-2 border-gray-300 bg-white text-black focus:border-primary shadow-lg" required />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">Tipo de consulta</label>
@@ -76,7 +76,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground text-sm">Teléfono</h4>
-                  <p className="text-muted-foreground text-sm">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground text-sm">341-5624552</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 p-4 bg-muted/30 rounded-xl animate-fade-in delay-100 shadow-lg">
@@ -85,7 +85,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground text-sm">Email</h4>
-                  <p className="text-muted-foreground text-sm">info@cardiomedic.com</p>
+                  <p className="text-muted-foreground text-sm">cardiomedic365@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 p-4 bg-muted/30 rounded-xl animate-fade-in delay-200 shadow-lg">
@@ -115,7 +115,7 @@ export function ContactSection() {
                 <FaWhatsapp className="h-10 w-10 text-green-600 mx-auto mb-3" />
                 <h4 className="text-lg font-serif font-semibold text-foreground mb-2">WhatsApp Directo</h4>
                 <p className="text-muted-foreground text-sm mb-4">Atención rápida y personalizada</p>
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white rounded-full shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary" onClick={() => window.open("https://wa.me/15551234567?text=Hola%20Cardio%20Medic,%20necesito%20información%20sobre%20sus%20servicios", "_blank")}> <FaWhatsapp className="h-5 w-5 mr-2" /> Contactar </Button>
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white rounded-full shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary" onClick={() => window.open("https://wa.me/5493415624552?text=Hola%20Cardio%20Medic,%20necesito%20información%20sobre%20sus%20servicios", "_blank")}> <FaWhatsapp className="h-5 w-5 mr-2" /> Contactar </Button>
                 
               </CardContent>
             </Card>
@@ -124,7 +124,7 @@ export function ContactSection() {
         <div className="mt-12 animate-fade-in delay-500">
           <Card className="border-0 shadow-xl overflow-hidden">
             <CardContent className="p-0">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153167!3d-37.81627997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3f3f3f3%3A0x3f3f3f3f3f3f3f3f!2sCardio%20Medic%20-%20Torre%20M%C3%A9dica!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses" width="100%" height="400" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Ubicación Cardio Medic" />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2610.49927880195!2d-60.6524162!3d-32.9769417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab980551b93b%3A0x3b4d8345ac3de75f!2sSaavedra%201555%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e1!3m2!1ses!2sar!4v1757082637485!5m2!1ses!2sar" width="100%" height="400" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Ubicación Cardio Medic" />
             </CardContent>
           </Card>
         </div>
