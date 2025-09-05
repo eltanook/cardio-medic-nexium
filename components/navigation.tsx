@@ -38,9 +38,9 @@ export function Navigation() {
             <Image 
               src="/logo.png" 
               alt="Cardio Medic Logo" 
-              width={120} 
-              height={120}
-              className="h-28 w-28 object-contain"
+              width={80} 
+              height={80}
+              className="h-20 w-20 object-contain"
               priority
             />
           </div>

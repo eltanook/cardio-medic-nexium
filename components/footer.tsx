@@ -2,6 +2,7 @@
 
 import { Heart, MessageCircle, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -13,12 +14,15 @@ export function Footer() {
           {/* Logo + Slogan/Resumen con animación */}
           <div className="lg:col-span-1 flex flex-col items-start text-left">
             <div className="flex items-center justify-start space-x-3 mb-6">
-              <div className="bg-primary/30 p-2 rounded-xl">
-                <Heart className="h-8 w-8 text-primary" />
-              </div>
-              <div className="text-left">
-                <span className="text-2xl font-serif font-bold text-primary">Cardio Medic</span>
-                <div className="text-xs text-foreground font-semibold">Cuidado médico 24/7</div>
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/logo.png"
+                  alt="Cardio Medic Logo"
+                  width={120}
+                  height={60}
+                  className="object-contain"
+                  priority
+                />
               </div>
             </div>
             <p className="text-foreground font-medium text-sm leading-relaxed text-left">
