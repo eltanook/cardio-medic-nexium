@@ -94,8 +94,8 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground text-sm">Dirección</h4>
-                  <p className="text-muted-foreground text-sm">Av. Salud 123, Torre Médica</p>
-                  <p className="text-muted-foreground text-sm">Ciudad Médica, Estado 12345</p>
+                  <p className="text-muted-foreground text-sm">Saavedra 1555</p>
+                  <p className="text-muted-foreground text-sm">Rosario - Provincia de Santa Fe</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 p-4 bg-muted/30 rounded-xl animate-fade-in delay-300 shadow-lg">
